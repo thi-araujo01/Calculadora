@@ -1,6 +1,6 @@
 ﻿
 namespace Calculadora {
-    partial class Form1 {
+    partial class Calc {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -62,7 +62,7 @@ namespace Calculadora {
             this.txtResult.Size = new System.Drawing.Size(303, 71);
             this.txtResult.TabIndex = 0;
             this.txtResult.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtResult.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtResult.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
             // btn1
             // 
@@ -77,7 +77,7 @@ namespace Calculadora {
             this.btn1.TabIndex = 13;
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = false;
-            this.btn1.Click += new System.EventHandler(this.btn1_Click);
+            this.btn1.Click += new System.EventHandler(this.Btn1_Click);
             // 
             // btn2
             // 
@@ -92,7 +92,7 @@ namespace Calculadora {
             this.btn2.TabIndex = 17;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = false;
-            this.btn2.Click += new System.EventHandler(this.btn2_Click);
+            this.btn2.Click += new System.EventHandler(this.Btn2_Click);
             // 
             // btn3
             // 
@@ -107,7 +107,7 @@ namespace Calculadora {
             this.btn3.TabIndex = 18;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = false;
-            this.btn3.Click += new System.EventHandler(this.btn3_Click);
+            this.btn3.Click += new System.EventHandler(this.Btn3_Click);
             // 
             // btnadc
             // 
@@ -122,7 +122,7 @@ namespace Calculadora {
             this.btnadc.TabIndex = 19;
             this.btnadc.Text = "+";
             this.btnadc.UseVisualStyleBackColor = false;
-            this.btnadc.Click += new System.EventHandler(this.btnadc_Click);
+            this.btnadc.Click += new System.EventHandler(this.Btnadc_Click);
             // 
             // btnsubt
             // 
@@ -137,7 +137,7 @@ namespace Calculadora {
             this.btnsubt.TabIndex = 20;
             this.btnsubt.Text = "-";
             this.btnsubt.UseVisualStyleBackColor = false;
-            this.btnsubt.Click += new System.EventHandler(this.btnsubt_Click);
+            this.btnsubt.Click += new System.EventHandler(this.Btnsubt_Click);
             // 
             // btn6
             // 
@@ -152,7 +152,7 @@ namespace Calculadora {
             this.btn6.TabIndex = 21;
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = false;
-            this.btn6.Click += new System.EventHandler(this.btn6_Click);
+            this.btn6.Click += new System.EventHandler(this.Btn6_Click);
             // 
             // btnmult
             // 
@@ -167,7 +167,7 @@ namespace Calculadora {
             this.btnmult.TabIndex = 22;
             this.btnmult.Text = "x";
             this.btnmult.UseVisualStyleBackColor = false;
-            this.btnmult.Click += new System.EventHandler(this.btnmult_Click);
+            this.btnmult.Click += new System.EventHandler(this.Btnmult_Click);
             // 
             // btn9
             // 
@@ -182,7 +182,7 @@ namespace Calculadora {
             this.btn9.TabIndex = 23;
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = false;
-            this.btn9.Click += new System.EventHandler(this.btn9_Click);
+            this.btn9.Click += new System.EventHandler(this.Btn9_Click);
             // 
             // btn5
             // 
@@ -197,7 +197,7 @@ namespace Calculadora {
             this.btn5.TabIndex = 24;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = false;
-            this.btn5.Click += new System.EventHandler(this.btn5_Click);
+            this.btn5.Click += new System.EventHandler(this.Btn5_Click);
             // 
             // btn4
             // 
@@ -212,7 +212,7 @@ namespace Calculadora {
             this.btn4.TabIndex = 25;
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = false;
-            this.btn4.Click += new System.EventHandler(this.btn4_Click);
+            this.btn4.Click += new System.EventHandler(this.Btn4_Click);
             // 
             // btn8
             // 
@@ -227,7 +227,7 @@ namespace Calculadora {
             this.btn8.TabIndex = 26;
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = false;
-            this.btn8.Click += new System.EventHandler(this.btn8_Click);
+            this.btn8.Click += new System.EventHandler(this.Btn8_Click);
             // 
             // btn7
             // 
@@ -242,7 +242,7 @@ namespace Calculadora {
             this.btn7.TabIndex = 27;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = false;
-            this.btn7.Click += new System.EventHandler(this.btn7_Click);
+            this.btn7.Click += new System.EventHandler(this.Btn7_Click);
             // 
             // btn0
             // 
@@ -257,7 +257,7 @@ namespace Calculadora {
             this.btn0.TabIndex = 28;
             this.btn0.Text = "0";
             this.btn0.UseVisualStyleBackColor = false;
-            this.btn0.Click += new System.EventHandler(this.btn0_Click);
+            this.btn0.Click += new System.EventHandler(this.Btn0_Click);
             // 
             // btnvirg
             // 
@@ -286,6 +286,7 @@ namespace Calculadora {
             this.btnigual.TabIndex = 30;
             this.btnigual.Text = "=";
             this.btnigual.UseVisualStyleBackColor = false;
+            this.btnigual.Click += new System.EventHandler(this.Btnigual_Click);
             // 
             // btnmaismenos
             // 
@@ -314,7 +315,7 @@ namespace Calculadora {
             this.btndiv.TabIndex = 32;
             this.btndiv.Text = "÷";
             this.btndiv.UseVisualStyleBackColor = false;
-            this.btndiv.Click += new System.EventHandler(this.btndiv_Click);
+            this.btndiv.Click += new System.EventHandler(this.Btndiv_Click);
             // 
             // btnC
             // 
