@@ -55,7 +55,7 @@ namespace Calculadora {
             this.txtResult.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtResult.Font = new System.Drawing.Font("Segoe UI Semibold", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtResult.ForeColor = System.Drawing.SystemColors.Window;
-            this.txtResult.Location = new System.Drawing.Point(1, 36);
+            this.txtResult.Location = new System.Drawing.Point(1, 39);
             this.txtResult.MaximumSize = new System.Drawing.Size(303, 71);
             this.txtResult.MinimumSize = new System.Drawing.Size(303, 71);
             this.txtResult.Name = "txtResult";
@@ -387,7 +387,7 @@ namespace Calculadora {
             this.txtOperacao.TabIndex = 37;
             this.txtOperacao.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // Form1
+            // Calc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -419,7 +419,7 @@ namespace Calculadora {
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(321, 530);
             this.MinimumSize = new System.Drawing.Size(321, 530);
-            this.Name = "Form1";
+            this.Name = "Calc";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora";
             this.Load += new System.EventHandler(this.Form1_Load);

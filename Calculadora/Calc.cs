@@ -11,6 +11,11 @@ namespace Calculadora {
 
         public Calc() {
             InitializeComponent();
+            btnadc.Enabled = false;                   //inicia o programa com os botões de operação desativados
+            btnsubt.Enabled = false;
+            btnmult.Enabled = false;
+            btndiv.Enabled = false;
+            btnigual.Enabled = false;
         }
 
         private void Form1_Load(object sender, EventArgs e) {
@@ -30,10 +35,16 @@ namespace Calculadora {
                 Subtracao = false;
                 Multip = false;
                 Divisao = false;
+                btnadc.Enabled = true;
 
                 txtResult.Text = "1";
             }
             else {
+                btnadc.Enabled = true;            //habilita os botões de operação caso seja o primeiro número digitado
+                btnsubt.Enabled = true;
+                btnmult.Enabled = true;
+                btndiv.Enabled = true;
+                btnigual.Enabled = true;
                 txtResult.Text += "1";
             }
         }
@@ -48,6 +59,11 @@ namespace Calculadora {
                 txtResult.Text = "2";
             }
             else {
+                btnadc.Enabled = true;
+                btnsubt.Enabled = true;
+                btnmult.Enabled = true;
+                btndiv.Enabled = true;
+                btnigual.Enabled = true;
                 txtResult.Text += "2";
             }
         }
@@ -61,6 +77,11 @@ namespace Calculadora {
                 txtResult.Text = "3";
             }
             else {
+                btnadc.Enabled = true;
+                btnsubt.Enabled = true;
+                btnmult.Enabled = true;
+                btndiv.Enabled = true;
+                btnigual.Enabled = true;
                 txtResult.Text += "3";
             }
         }
@@ -74,6 +95,11 @@ namespace Calculadora {
                 txtResult.Text = "4";
             }
             else {
+                btnadc.Enabled = true;
+                btnsubt.Enabled = true;
+                btnmult.Enabled = true;
+                btndiv.Enabled = true;
+                btnigual.Enabled = true;
                 txtResult.Text += "4";
             }
         }
@@ -87,6 +113,11 @@ namespace Calculadora {
                 txtResult.Text = "5";
             }
             else {
+                btnadc.Enabled = true;
+                btnsubt.Enabled = true;
+                btnmult.Enabled = true;
+                btndiv.Enabled = true;
+                btnigual.Enabled = true;
                 txtResult.Text += "5";
             }
         }
@@ -100,6 +131,11 @@ namespace Calculadora {
                 txtResult.Text = "6";
             }
             else {
+                btnadc.Enabled = true;
+                btnsubt.Enabled = true;
+                btnmult.Enabled = true;
+                btndiv.Enabled = true;
+                btnigual.Enabled = true;
                 txtResult.Text += "6";
             }
         }
@@ -113,6 +149,11 @@ namespace Calculadora {
                 txtResult.Text = "7";
             }
             else {
+                btnadc.Enabled = true;
+                btnsubt.Enabled = true;
+                btnmult.Enabled = true;
+                btndiv.Enabled = true;
+                btnigual.Enabled = true;
                 txtResult.Text += "7";
             }
         }
@@ -126,6 +167,11 @@ namespace Calculadora {
                 txtResult.Text = "8";
             }
             else {
+                btnadc.Enabled = true;
+                btnsubt.Enabled = true;
+                btnmult.Enabled = true;
+                btndiv.Enabled = true;
+                btnigual.Enabled = true;
                 txtResult.Text += "8";
             }
         }
@@ -139,6 +185,11 @@ namespace Calculadora {
                 txtResult.Text = "9";
             }
             else {
+                btnadc.Enabled = true;
+                btnsubt.Enabled = true;
+                btnmult.Enabled = true;
+                btndiv.Enabled = true;
+                btnigual.Enabled = true;
                 txtResult.Text += "9";
             }
         }
@@ -152,6 +203,11 @@ namespace Calculadora {
                 txtResult.Text = "0";
             }
             else {
+                btnadc.Enabled = true;
+                btnsubt.Enabled = true;
+                btnmult.Enabled = true;
+                btndiv.Enabled = true;
+                btnigual.Enabled = true;
                 txtResult.Text += "0";
             }
         }
