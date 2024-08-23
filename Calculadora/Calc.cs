@@ -23,21 +23,31 @@ namespace Calculadora {
         }
 
         private void TextBox1_TextChanged(object sender, EventArgs e) {
+            if (sender.ToString() != "") {                         //habilita os botões de operação caso o valor seja digitado
+                btnadc.Enabled = true;
+                btnsubt.Enabled = true;
+                btnmult.Enabled = true;
+                btndiv.Enabled = true;
+                btnigual.Enabled = true;
+            }
+        }
+
+        private void txtOperacao_TextChanged(object sender, EventArgs e) {
 
         }
 
         //abaixo foi criado o comando 'clique' para todos os botões
 
         private void Btn1_Click(object sender, EventArgs e) {
-
             if (Adicao == true || Subtracao == true || Multip == true || Divisao == true) {
                 Adicao = false;               //desativa as operações para que seja possível utilizar números com mais de 1 dígito
                 Subtracao = false;
                 Multip = false;
                 Divisao = false;
-                btnadc.Enabled = true;
 
                 txtResult.Text = "1";
+                txtResult.SelectionStart = Right;
+                txtResult.Focus();
             }
             else {
                 btnadc.Enabled = true;            //habilita os botões de operação caso seja o primeiro número digitado
@@ -46,6 +56,8 @@ namespace Calculadora {
                 btndiv.Enabled = true;
                 btnigual.Enabled = true;
                 txtResult.Text += "1";
+                txtResult.SelectionStart = Right;
+                txtResult.Focus();
             }
         }
 
@@ -57,6 +69,8 @@ namespace Calculadora {
                 Multip = false;
                 Divisao = false;
                 txtResult.Text = "2";
+                txtResult.SelectionStart = Right;
+                txtResult.Focus();
             }
             else {
                 btnadc.Enabled = true;
@@ -65,6 +79,8 @@ namespace Calculadora {
                 btndiv.Enabled = true;
                 btnigual.Enabled = true;
                 txtResult.Text += "2";
+                txtResult.SelectionStart = Right;
+                txtResult.Focus();
             }
         }
 
@@ -75,6 +91,8 @@ namespace Calculadora {
                 Multip = false;
                 Divisao = false;
                 txtResult.Text = "3";
+                txtResult.SelectionStart = Right;
+                txtResult.Focus();
             }
             else {
                 btnadc.Enabled = true;
@@ -83,6 +101,8 @@ namespace Calculadora {
                 btndiv.Enabled = true;
                 btnigual.Enabled = true;
                 txtResult.Text += "3";
+                txtResult.SelectionStart = Right;
+                txtResult.Focus();
             }
         }
 
@@ -93,6 +113,8 @@ namespace Calculadora {
                 Multip = false;
                 Divisao = false;
                 txtResult.Text = "4";
+                txtResult.SelectionStart = Right;
+                txtResult.Focus();
             }
             else {
                 btnadc.Enabled = true;
@@ -101,6 +123,8 @@ namespace Calculadora {
                 btndiv.Enabled = true;
                 btnigual.Enabled = true;
                 txtResult.Text += "4";
+                txtResult.SelectionStart = Right;
+                txtResult.Focus();
             }
         }
 
@@ -111,6 +135,8 @@ namespace Calculadora {
                 Multip = false;
                 Divisao = false;
                 txtResult.Text = "5";
+                txtResult.SelectionStart = Right;
+                txtResult.Focus();
             }
             else {
                 btnadc.Enabled = true;
@@ -119,6 +145,8 @@ namespace Calculadora {
                 btndiv.Enabled = true;
                 btnigual.Enabled = true;
                 txtResult.Text += "5";
+                txtResult.SelectionStart = Right;
+                txtResult.Focus();
             }
         }
 
@@ -129,6 +157,8 @@ namespace Calculadora {
                 Multip = false;
                 Divisao = false;
                 txtResult.Text = "6";
+                txtResult.SelectionStart = Right;
+                txtResult.Focus();
             }
             else {
                 btnadc.Enabled = true;
@@ -137,6 +167,8 @@ namespace Calculadora {
                 btndiv.Enabled = true;
                 btnigual.Enabled = true;
                 txtResult.Text += "6";
+                txtResult.SelectionStart = Right;
+                txtResult.Focus();
             }
         }
 
@@ -147,6 +179,8 @@ namespace Calculadora {
                 Multip = false;
                 Divisao = false;
                 txtResult.Text = "7";
+                txtResult.SelectionStart = Right;
+                txtResult.Focus();
             }
             else {
                 btnadc.Enabled = true;
@@ -155,6 +189,8 @@ namespace Calculadora {
                 btndiv.Enabled = true;
                 btnigual.Enabled = true;
                 txtResult.Text += "7";
+                txtResult.SelectionStart = Right;
+                txtResult.Focus();
             }
         }
 
@@ -165,6 +201,8 @@ namespace Calculadora {
                 Multip = false;
                 Divisao = false;
                 txtResult.Text = "8";
+                txtResult.SelectionStart = Right;
+                txtResult.Focus();
             }
             else {
                 btnadc.Enabled = true;
@@ -173,6 +211,8 @@ namespace Calculadora {
                 btndiv.Enabled = true;
                 btnigual.Enabled = true;
                 txtResult.Text += "8";
+                txtResult.SelectionStart = Right;
+                txtResult.Focus();
             }
         }
 
@@ -183,6 +223,8 @@ namespace Calculadora {
                 Multip = false;
                 Divisao = false;
                 txtResult.Text = "9";
+                txtResult.SelectionStart = Right;
+                txtResult.Focus();
             }
             else {
                 btnadc.Enabled = true;
@@ -191,6 +233,8 @@ namespace Calculadora {
                 btndiv.Enabled = true;
                 btnigual.Enabled = true;
                 txtResult.Text += "9";
+                txtResult.SelectionStart = Right;
+                txtResult.Focus();
             }
         }
 
@@ -201,6 +245,8 @@ namespace Calculadora {
                 Multip = false;
                 Divisao = false;
                 txtResult.Text = "0";
+                txtResult.SelectionStart = Right;
+                txtResult.Focus();
             }
             else {
                 btnadc.Enabled = true;
@@ -209,6 +255,8 @@ namespace Calculadora {
                 btndiv.Enabled = true;
                 btnigual.Enabled = true;
                 txtResult.Text += "0";
+                txtResult.SelectionStart = Right;
+                txtResult.Focus();
             }
         }
 
@@ -216,24 +264,32 @@ namespace Calculadora {
             Adicao = true;                                       //habilita a adição
             Calculo = decimal.Parse(txtResult.Text);             //converte o tipo de dado para decimal
             txtOperacao.Text = txtResult.Text + " + ";           //adiciona o caractere no campo txtOperacao juntamente com o que estiver no campo txtResult
+            txtResult.SelectionStart = Right;
+            txtResult.Focus();
         }
 
         private void Btnsubt_Click(object sender, EventArgs e) {
             Subtracao = true;
             Calculo = decimal.Parse(txtResult.Text);
             txtOperacao.Text = txtResult.Text + " - ";
+            txtResult.SelectionStart = Right;
+            txtResult.Focus();
         }
 
         private void Btnmult_Click(object sender, EventArgs e) {
             Multip = true;
             Calculo = decimal.Parse(txtResult.Text);
             txtOperacao.Text = txtResult.Text + " * ";
+            txtResult.SelectionStart = Right;
+            txtResult.Focus();
         }
 
         private void Btndiv_Click(object sender, EventArgs e) {
             Divisao = true;
             Calculo = decimal.Parse(txtResult.Text);
             txtOperacao.Text = txtResult.Text + " ÷ ";
+            txtResult.SelectionStart = Right;
+            txtResult.Focus();
         }
 
         private void Btnigual_Click(object sender, EventArgs e) {
@@ -258,6 +314,8 @@ namespace Calculadora {
                 decimal result = Calculo / decimal.Parse(txtResult.Text);
                 txtResult.Text = Convert.ToString(result);
             }
+            txtResult.SelectionStart = Right;
+            txtResult.Focus();
         }
     }
 }

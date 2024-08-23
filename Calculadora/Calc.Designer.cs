@@ -24,6 +24,7 @@ namespace Calculadora {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calc));
             this.txtResult = new System.Windows.Forms.TextBox();
             this.btn1 = new System.Windows.Forms.Button();
             this.btn2 = new System.Windows.Forms.Button();
@@ -386,6 +387,7 @@ namespace Calculadora {
             this.txtOperacao.Size = new System.Drawing.Size(303, 36);
             this.txtOperacao.TabIndex = 37;
             this.txtOperacao.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOperacao.TextChanged += new System.EventHandler(this.txtOperacao_TextChanged);
             // 
             // Calc
             // 
@@ -416,6 +418,7 @@ namespace Calculadora {
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.btn1);
             this.Controls.Add(this.txtResult);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(321, 530);
             this.MinimumSize = new System.Drawing.Size(321, 530);
