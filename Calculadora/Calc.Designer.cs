@@ -64,6 +64,7 @@ namespace Calculadora {
             this.txtResult.TabIndex = 0;
             this.txtResult.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtResult.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
+            this.txtResult.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtResult_KeyPress);
             // 
             // btn1
             // 
@@ -331,6 +332,7 @@ namespace Calculadora {
             this.btnC.TabIndex = 33;
             this.btnC.Text = "C";
             this.btnC.UseVisualStyleBackColor = false;
+            this.btnC.Click += new System.EventHandler(this.btnC_Click);
             // 
             // btnCE
             // 
@@ -345,6 +347,7 @@ namespace Calculadora {
             this.btnCE.TabIndex = 34;
             this.btnCE.Text = "CE";
             this.btnCE.UseVisualStyleBackColor = false;
+            this.btnCE.Click += new System.EventHandler(this.btnCE_Click);
             // 
             // btnperc
             // 
@@ -359,6 +362,7 @@ namespace Calculadora {
             this.btnperc.TabIndex = 35;
             this.btnperc.Text = "%";
             this.btnperc.UseVisualStyleBackColor = false;
+            this.btnperc.Click += new System.EventHandler(this.btnperc_Click);
             // 
             // btndel
             // 
